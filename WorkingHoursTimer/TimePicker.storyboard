@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Md-rD-zmJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--時間を設定-->
+        <scene sceneID="Wh7-nk-qXJ">
+            <objects>
+                <viewController storyboardIdentifier="TimePicker" id="0Md-rD-zmJ" customClass="SettingsTimePickerViewController" customModule="WorkingHoursTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SyW-ge-pPz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hW-Y3-l9Q">
+                                <rect key="frame" x="0.0" y="88" width="414" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="605833200.02130795">
+                                    <!--2020-03-13 23:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="ja_JP"/>
+                                <connections>
+                                    <action selector="timePickerValueChanged:" destination="0Md-rD-zmJ" eventType="valueChanged" id="4KX-np-kRc"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0hW-Y3-l9Q" firstAttribute="top" secondItem="VNf-sV-5SR" secondAttribute="top" id="UOF-ne-88o"/>
+                            <constraint firstItem="0hW-Y3-l9Q" firstAttribute="trailing" secondItem="VNf-sV-5SR" secondAttribute="trailing" id="i4c-w3-v8k"/>
+                            <constraint firstItem="0hW-Y3-l9Q" firstAttribute="leading" secondItem="VNf-sV-5SR" secondAttribute="leading" id="oV6-z2-HSQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VNf-sV-5SR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="時間を設定" id="DaB-jx-7fZ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="timePicker" destination="0hW-Y3-l9Q" id="enN-KN-u5V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRI-49-OJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="-88"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DjT-m9-7c6">
+    <device id="ipad9_7" orientation="landscape" layout="splitview2_3" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="UWg-Fu-Urf">
+            <objects>
+                <navigationController modalPresentationStyle="formSheet" id="DjT-m9-7c6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zbf-EF-L8W">
+                        <rect key="frame" x="0.0" y="0.0" width="694" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LML-0J-4qU" kind="relationship" relationship="rootViewController" id="7VH-ea-UUW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hAi-h0-csw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-708" y="-88"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="brQ-Qm-LBp">
+            <objects>
+                <tableViewController id="LML-0J-4qU" customClass="SettingsViewController" customModule="定時タイマー" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="gq1-bW-fuB">
+                        <rect key="frame" x="0.0" y="0.0" width="694" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HourCell" id="axS-fY-AVC" customClass="SettingsHourCell" customModule="定時タイマー" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="694" height="52.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="axS-fY-AVC" id="X9u-c5-lSd">
+                                    <rect key="frame" x="0.0" y="0.0" width="694" height="52.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="勤務時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JV0-Dl-Y2S">
+                                            <rect key="frame" x="20" y="11" width="69.5" height="30.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELm-bF-Mbv">
+                                            <rect key="frame" x="643" y="11" width="31" height="30.5"/>
+                                            <state key="normal" title="変更"/>
+                                            <connections>
+                                                <action selector="changeTapped:" destination="axS-fY-AVC" eventType="touchUpInside" id="itF-bh-gdN"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EA-Yn-khw">
+                                            <rect key="frame" x="572.5" y="11" width="46.5" height="30.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="JV0-Dl-Y2S" secondAttribute="bottom" id="2er-xO-KYX"/>
+                                        <constraint firstItem="4EA-Yn-khw" firstAttribute="top" secondItem="X9u-c5-lSd" secondAttribute="topMargin" id="3cz-EN-H7g"/>
+                                        <constraint firstItem="4EA-Yn-khw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JV0-Dl-Y2S" secondAttribute="trailing" constant="24" id="DPI-It-UvU"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="4EA-Yn-khw" secondAttribute="bottom" id="RMQ-TT-zV0"/>
+                                        <constraint firstItem="ELm-bF-Mbv" firstAttribute="top" secondItem="X9u-c5-lSd" secondAttribute="topMargin" id="TAK-c8-ssw"/>
+                                        <constraint firstItem="JV0-Dl-Y2S" firstAttribute="leading" secondItem="X9u-c5-lSd" secondAttribute="leadingMargin" id="Tw2-DC-mXe"/>
+                                        <constraint firstItem="JV0-Dl-Y2S" firstAttribute="top" secondItem="X9u-c5-lSd" secondAttribute="topMargin" id="VbT-qa-d0X"/>
+                                        <constraint firstItem="ELm-bF-Mbv" firstAttribute="leading" secondItem="4EA-Yn-khw" secondAttribute="trailing" constant="24" id="d9m-ge-wd4"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ELm-bF-Mbv" secondAttribute="bottom" id="gLZ-St-8Dr"/>
+                                        <constraint firstItem="ELm-bF-Mbv" firstAttribute="trailing" secondItem="X9u-c5-lSd" secondAttribute="trailingMargin" id="nPl-Iu-RiK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="changeButton" destination="ELm-bF-Mbv" id="dQl-Vr-zGI"/>
+                                    <outlet property="hourTitleLabel" destination="JV0-Dl-Y2S" id="8DO-FB-2L4"/>
+                                    <outlet property="timeLabel" destination="4EA-Yn-khw" id="Df4-w6-7Np"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LML-0J-4qU" id="wbO-ex-QTD"/>
+                            <outlet property="delegate" destination="LML-0J-4qU" id="v8s-nK-UtV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="設定" id="4Yi-NF-K1m">
+                        <barButtonItem key="leftBarButtonItem" title="閉じる" id="VCu-Dq-cGh">
+                            <connections>
+                                <action selector="close:" destination="LML-0J-4qU" id="ykj-5Y-m3R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ks-3S-N7u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61" y="-88"/>
+        </scene>
+    </scenes>
+</document>

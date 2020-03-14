@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		963CF571241C717900952E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CF570241C717900952E59 /* AppDelegate.swift */; };
 		963CF573241C717900952E59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CF572241C717900952E59 /* SceneDelegate.swift */; };
-		963CF575241C717900952E59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CF574241C717900952E59 /* ViewController.swift */; };
-		963CF578241C717900952E59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963CF576241C717900952E59 /* Main.storyboard */; };
+		963CF575241C717900952E59 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CF574241C717900952E59 /* TimerViewController.swift */; };
 		963CF57A241C717B00952E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963CF579241C717B00952E59 /* Assets.xcassets */; };
-		963CF57D241C717B00952E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963CF57B241C717B00952E59 /* LaunchScreen.storyboard */; };
+		963CF585241C71F000952E59 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CF584241C71F000952E59 /* SettingsViewController.swift */; };
+		963CF587241C720000952E59 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963CF586241C720000952E59 /* Settings.storyboard */; };
+		963CF589241C79B700952E59 /* SettingsHourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CF588241C79B700952E59 /* SettingsHourCell.swift */; };
+		963CF58F241C810D00952E59 /* SettingsTimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CF58E241C810D00952E59 /* SettingsTimePickerViewController.swift */; };
+		963CF591241C81A600952E59 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CF590241C81A600952E59 /* Settings.swift */; };
+		963CF593241C88FF00952E59 /* TimePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963CF592241C88FF00952E59 /* TimePicker.storyboard */; };
+		963CF597241CB62F00952E59 /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963CF596241CB62F00952E59 /* Timer.storyboard */; };
+		963CF599241CB63C00952E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963CF598241CB63C00952E59 /* LaunchScreen.storyboard */; };
+		963CF59B241CCC7F00952E59 /* TimeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CF59A241CCC7F00952E59 /* TimeUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		963CF56D241C717900952E59 /* WorkingHoursTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkingHoursTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		963CF56D241C717900952E59 /* 定時タイマー.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "定時タイマー.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		963CF570241C717900952E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		963CF572241C717900952E59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		963CF574241C717900952E59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		963CF577241C717900952E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		963CF574241C717900952E59 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		963CF579241C717B00952E59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		963CF57C241C717B00952E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		963CF57E241C717B00952E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963CF584241C71F000952E59 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		963CF586241C720000952E59 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		963CF588241C79B700952E59 /* SettingsHourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHourCell.swift; sourceTree = "<group>"; };
+		963CF58E241C810D00952E59 /* SettingsTimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTimePickerViewController.swift; sourceTree = "<group>"; };
+		963CF590241C81A600952E59 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		963CF592241C88FF00952E59 /* TimePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimePicker.storyboard; sourceTree = "<group>"; };
+		963CF596241CB62F00952E59 /* Timer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
+		963CF598241CB63C00952E59 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		963CF59A241CCC7F00952E59 /* TimeUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +62,7 @@
 		963CF56E241C717900952E59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				963CF56D241C717900952E59 /* WorkingHoursTimer.app */,
+				963CF56D241C717900952E59 /* 定時タイマー.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,10 +72,17 @@
 			children = (
 				963CF570241C717900952E59 /* AppDelegate.swift */,
 				963CF572241C717900952E59 /* SceneDelegate.swift */,
-				963CF574241C717900952E59 /* ViewController.swift */,
-				963CF576241C717900952E59 /* Main.storyboard */,
+				963CF574241C717900952E59 /* TimerViewController.swift */,
+				963CF584241C71F000952E59 /* SettingsViewController.swift */,
+				963CF58E241C810D00952E59 /* SettingsTimePickerViewController.swift */,
+				963CF588241C79B700952E59 /* SettingsHourCell.swift */,
+				963CF590241C81A600952E59 /* Settings.swift */,
+				963CF59A241CCC7F00952E59 /* TimeUtility.swift */,
+				963CF596241CB62F00952E59 /* Timer.storyboard */,
+				963CF586241C720000952E59 /* Settings.storyboard */,
+				963CF592241C88FF00952E59 /* TimePicker.storyboard */,
 				963CF579241C717B00952E59 /* Assets.xcassets */,
-				963CF57B241C717B00952E59 /* LaunchScreen.storyboard */,
+				963CF598241CB63C00952E59 /* LaunchScreen.storyboard */,
 				963CF57E241C717B00952E59 /* Info.plist */,
 			);
 			path = WorkingHoursTimer;
@@ -84,7 +105,7 @@
 			);
 			name = WorkingHoursTimer;
 			productName = WorkingHoursTimer;
-			productReference = 963CF56D241C717900952E59 /* WorkingHoursTimer.app */;
+			productReference = 963CF56D241C717900952E59 /* 定時タイマー.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -109,6 +130,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 963CF564241C717900952E59;
 			productRefGroup = 963CF56E241C717900952E59 /* Products */;
@@ -125,9 +147,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963CF57D241C717B00952E59 /* LaunchScreen.storyboard in Resources */,
+				963CF597241CB62F00952E59 /* Timer.storyboard in Resources */,
 				963CF57A241C717B00952E59 /* Assets.xcassets in Resources */,
-				963CF578241C717900952E59 /* Main.storyboard in Resources */,
+				963CF593241C88FF00952E59 /* TimePicker.storyboard in Resources */,
+				963CF599241CB63C00952E59 /* LaunchScreen.storyboard in Resources */,
+				963CF587241C720000952E59 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,38 +162,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963CF575241C717900952E59 /* ViewController.swift in Sources */,
+				963CF575241C717900952E59 /* TimerViewController.swift in Sources */,
+				963CF589241C79B700952E59 /* SettingsHourCell.swift in Sources */,
 				963CF571241C717900952E59 /* AppDelegate.swift in Sources */,
 				963CF573241C717900952E59 /* SceneDelegate.swift in Sources */,
+				963CF591241C81A600952E59 /* Settings.swift in Sources */,
+				963CF59B241CCC7F00952E59 /* TimeUtility.swift in Sources */,
+				963CF58F241C810D00952E59 /* SettingsTimePickerViewController.swift in Sources */,
+				963CF585241C71F000952E59 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		963CF576241C717900952E59 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				963CF577241C717900952E59 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		963CF57B241C717B00952E59 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				963CF57C241C717B00952E59 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		963CF57F241C717B00952E59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -291,8 +303,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.y-grace.WorkingHoursTimer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.y-grace.FlexTimer";
+				PRODUCT_NAME = "定時タイマー";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,8 +321,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.y-grace.WorkingHoursTimer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.y-grace.FlexTimer";
+				PRODUCT_NAME = "定時タイマー";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
